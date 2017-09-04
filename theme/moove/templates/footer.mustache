@@ -1,0 +1,100 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template theme_moove/footer
+
+    Footer template
+
+    Example context (json): {}
+}}
+<div id="top-footer" class="container">
+    <div class="row">
+        <div class="col-md-7 contact">
+            <h2>{{#str}}stayintouch, theme_moove{{/str}}</h2>
+            <h3>{{output.get_getintouchcontent_config}}</h3>
+            <ul>
+                {{#output.get_website_config}}<li><i class="fa fa-globe"></i>{{output.get_website_config}}</li>{{/output.get_website_config}}
+                {{#output.get_mobile_config}}<li><i class="fa fa-mobile-phone"></i>{{output.get_mobile_config}}</li>{{/output.get_mobile_config}}
+                {{#output.get_mail_config}}<li><i class="fa fa-envelope"></i>{{output.get_mail_config}}</li>{{/output.get_mail_config}}
+            </ul>
+        </div>
+        <div class="col-md-5 social">
+          <ul>
+              {{#output.get_facebook_config}}
+                <li>
+                  <a href="{{output.get_facebook_config}}" target="_blank" />
+                    <i class="fa fa-facebook-square"></i>
+                  </a>
+                </li>
+              {{/output.get_facebook_config}}
+
+              {{#output.get_twitter_config}}
+                <li>
+                  <a href="{{output.get_twitter_config}}" target="_blank" />
+                    <i class="fa fa-twitter-square"></i>
+                  </a>
+                </li>
+              {{/output.get_twitter_config}}
+
+              {{#output.get_googleplus_config}}
+                <li>
+                  <a href="{{output.get_googleplus_config}}" target="_blank" />
+                    <i class="fa fa-google-plus-square"></i>
+                  </a>
+                </li>
+              {{/output.get_googleplus_config}}
+
+              {{#output.get_linkedin_config}}
+                <li>
+                  <a href="{{output.get_linkedin_config}}" target="_blank" />
+                    <i class="fa fa-linkedin-square"></i>
+                  </a>
+                </li>
+              {{/output.get_linkedin_config}}
+          </ul>
+        </div>
+    </div>
+</div>
+
+<footer id="page-footer" class="p-y-1">
+    <div class="container">
+        <div id="course-footer">{{{ output.course_footer }}}</div>
+
+        {{# output.page_doc_link }}
+            <p class="helplink">{{{ output.page_doc_link }}}</p>
+        {{/ output.page_doc_link }}
+
+        <div class="madewithmoodle">
+            <p>{{#str}}madewitmoodle, theme_moove{{/str}}</p>
+            <a href="https://moodle.org"><img src="{{output.get_pix_image_url_base}}/moodle-logo-white.png" alt="Moodle logo"></a>
+        </div>
+
+        <div class="madeby">
+            <p>{{#str}}madeby, theme_moove{{/str}} <a href="http://conecti.me">conecti.me</a></p>
+        </div>
+
+        <nav class="nav navbar-nav hidden-lg-up">
+            {{# output.custom_menu_flat }}
+                <ul class="list-unstyled p-t-1">
+                    {{> theme_moove/custom_menu_footer }}
+                </ul>
+            {{/ output.custom_menu_flat }}
+        </nav>
+        {{{ output.standard_footer_html }}}
+        {{{ output.standard_end_of_body_html }}}
+    </div>
+</footer>

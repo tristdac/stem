@@ -1,0 +1,72 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template theme_moove/header
+
+    Page header template
+
+    Example context (json): {}
+}}
+<header role="banner" class="pos-f-t navbar navbar-full navbar-light bg-faded navbar-static-top moodle-has-zindex">
+
+    <div class="container-fluid navbar-nav">
+
+        <a href="{{{ config.wwwroot }}}" class="navbar-brand {{# output.get_logo }}has-logo{{/ output.get_logo }}
+            {{^ output.get_logo }}
+                hidden-sm-down
+            {{/ output.get_logo }}
+                ">
+            {{# output.get_logo }}
+                <span class="logo hidden-xs-down">
+                    <img src="{{output.get_logo}}" alt="{{sitename}}">
+                </span>
+            {{/ output.get_logo }}
+            {{^ output.get_logo }}
+                <span class="site-name hidden-sm-down">{{{ sitename }}}</span>
+            {{/ output.get_logo }}
+        </a>
+
+        <nav class="nav navbar-nav hidden-md-down navbar-custom-menu">
+            <!-- custom_menu -->
+            {{{ output.custom_menu }}}
+            <!-- page_heading_menu -->
+            {{{ output.page_heading_menu }}}
+        </nav>
+
+        <div class="popover-menu-items">
+            <ul class="nav navbar-nav">
+                <li class="popover-region">
+                    {{{ output.render_lang_menu }}}
+                </li>
+
+                <!-- navbar_plugin_output -->
+                {{{ output.navbar_plugin_output }}}
+
+                <!-- user_menu -->
+                {{{ output.user_menu }}}
+
+                <!-- Right blocks side menu -->
+                {{{ output.getcontrolsidebar }}}
+            </ul>
+        </div>
+
+        <!-- search_box -->
+        <span class="hidden-md-down">
+          {{{ output.search_box }}}
+        </span>
+    </div>
+</header>
