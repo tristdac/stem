@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/mootivated/db" VERSION="20170811" COMMENT="XMLDB file for Moodle local/mootivated"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="local_mootivated_log" COMMENT="A log of the actions which were captured.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="schoolid" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false" COMMENT="Internal school ID."/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false" COMMENT="The user who performed the action."/>
+        <FIELD NAME="contextid" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false" COMMENT="The context in which the action occured."/>
+        <FIELD NAME="eventname" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="The event name."/>
+        <FIELD NAME="objectid" TYPE="int" LENGTH="11" NOTNULL="false" SEQUENCE="false" COMMENT="The object ID associated with the event."/>
+        <FIELD NAME="relateduserid" TYPE="int" LENGTH="11" NOTNULL="false" SEQUENCE="false" COMMENT="The user related to this action (e.g. target)."/>
+        <FIELD NAME="coins" TYPE="int" LENGTH="11" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="The number of coins associated with that event."/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false" COMMENT="The time at which it happened."/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="schooluser" UNIQUE="false" FIELDS="schoolid, userid"/>
+        <INDEX NAME="all" UNIQUE="false" FIELDS="schoolid, userid, contextid, eventname, objectid, relateduserid, timecreated" COMMENT="All the fields used for lookups."/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="local_mootivated_school" COMMENT="The list of schools.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="cohortid" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false" COMMENT="The cohort containing the members of this school."/>
+        <FIELD NAME="privatekey" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="The private key."/>
+        <FIELD NAME="sendusername" TYPE="int" LENGTH="1" NOTNULL="true" DEFAULT="1" SEQUENCE="false" COMMENT="Whether we should send the usernames."/>
+        <FIELD NAME="maxactions" TYPE="int" LENGTH="11" NOTNULL="true" DEFAULT="180" SEQUENCE="false" COMMENT="The max actions per time frame."/>
+        <FIELD NAME="timeframeformaxactions" TYPE="int" LENGTH="11" NOTNULL="true" DEFAULT="600" SEQUENCE="false" COMMENT="Time frame for max actions."/>
+        <FIELD NAME="timebetweensameactions" TYPE="int" LENGTH="11" NOTNULL="true" DEFAULT="3600" SEQUENCE="false" COMMENT="The min time between same actions."/>
+        <FIELD NAME="rewardmethod" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="1" SEQUENCE="false"/>
+        <FIELD NAME="modcompletionrules" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="local_mootivated_completion" COMMENT="Log of the completion status to avoid duplicate rewards.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="schoolid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="courseid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="The course ID."/>
+        <FIELD NAME="cmid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="The course module ID, if any."/>
+        <FIELD NAME="state" TYPE="int" LENGTH="2" NOTNULL="true" SEQUENCE="false" COMMENT="The completed completion state."/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="The time at which the completion occurred."/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="usercoursecm" UNIQUE="true" FIELDS="userid, schoolid, courseid, cmid" COMMENT="User, school, course, and CM."/>
+      </INDEXES>
+    </TABLE>
+  </TABLES>
+</XMLDB>

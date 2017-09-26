@@ -1,0 +1,68 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    Trade element.
+}}
+<div id="{{uuid}}" style="display: inline;">
+    <div class="block-stash-trade" title="{{trade.name}}" id="block-stash-trade-id-{{trade.id}}" data-id="{{trade.id}}">
+        <div class="trade-label text-center p-y-1 p-x-1">{{trade.name}}</div>
+            <div class="container-fluid p-y-1">
+                <div class="row-fluid">
+                    <div class="span6 col-sm-6">
+                        <div class="block-stash-column-title"><strong>{{trade.gaintitle}}</strong></div>
+                        {{#tradeitems}}
+                            {{#gainloss}}
+                            <div class="block-stash-trade-item">
+                            {{>block_stash/item_xsmall}} <span>{{name}} ({{quantity}})</span>
+                            </div>
+                            {{/gainloss}}
+                        {{/tradeitems}}
+                    </div>
+                    <div class="span6 col-sm-6">
+                        <div class="block-stash-column-title"><strong>{{trade.losstitle}}</strong></div>
+                        {{#tradeitems}}
+                            {{^gainloss}}
+                            <div class="block-stash-trade-item">
+                            {{>block_stash/item_xsmall}} <span class="block-stash-trade-item-{{itemid}}" data-tradeid="{{trade.id}}">{{>block_stash/tradeitem_detail}}</span>
+                            </div>
+                            {{/gainloss}}
+                        {{/tradeitems}}
+                    </div>
+                </div>
+            </div>
+
+        <div class="accept-trade text-xs-center p-y-1">
+            <center><button disabled>{{#str}}accept, block_stash{{/str}}</button></center>
+        </div>
+
+    </div>
+</div>
+
+{{#js}}
+require(["jquery", "block_stash/trade", "block_stash/trade-area"], function($, Trade, TradeArea) {
+    var tradeArea = new TradeArea('#block-stash-trade-id-{{trade.id}}'),
+        trade = new Trade({id: {{trade.id}}, hashcode: '{{trade.hashcode}}'}),
+        node = $("#{{uuid}}");
+
+    if (!node.length) return;
+
+    node.find("button").click(function(e) {
+        e.preventDefault();
+        trade.do();
+    });
+});
+{{/js}}

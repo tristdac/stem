@@ -1,0 +1,56 @@
+.que.easyonamejs .answer {
+    padding: 0.3em;
+    width: auto;
+    display: inline;
+}
+.que.easyonamejs .answer input {
+    width: 65%;
+}
+.que.easyonamejs.author {
+		float: right;
+		font-style: italic ;
+		font-size: 10px;
+}
+#page-question-type-easyonamejs .mform .textareamonospace {
+    white-space: pre;
+    font-family: Andale Mono, Monaco, Courier New, DejaVu Sans Mono, monospace;
+}
+
+
+.que.easyonamejs span.answerlabel {
+    vertical-align: top;
+}
+
+
+.que.easyonamejs .arrowbutton {
+  background: #1979FA;
+  color: white;
+display: inline;
+
+}
+
+.sketcher-frame {
+	margin: -2px;
+	resize: none;
+	min-width: 370px;
+	min-height: 370px;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.easyonamejs.resizable{
+	border: none;
+	padding: 0px 16px 16px 0px;
+	border: 0px;
+	resize: both;
+	width: auto;
+	height: 510px;
+	min-width: 370px;
+	min-height: 370px;
+	overflow: hidden;
+	background-color: transparent;
+}
+
+.que.easyonamejs .license .logo{
+    margin-top: 20px;
+}

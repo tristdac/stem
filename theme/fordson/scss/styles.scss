@@ -780,3 +780,21 @@ body.format-topcoll h3.sectionname:before {
     }
 
 }
+
+.bootstrapelements .btn .fa {
+    margin-right: 25px;
+    background: #f7f7f7;
+    border-radius: 50%;
+    border: 1px dashed;
+    padding: 7px;
+    color: black;
+}
+
+.bootstrapelements .btn-primary {
+    color: #555;
+    font-size: inherit;
+    background-color: transparent;
+    padding: 0px;
+    padding-left: 2px;
+    border: none;
+}

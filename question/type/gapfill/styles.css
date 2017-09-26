@@ -1,0 +1,104 @@
+/* the gap where answers are dropped/keyed in */
+.que.gapfill input[type=text]{
+    background:white;
+    border: solid black thin;
+    border-radius:4px;
+    color:black;
+    margin-bottom:1px;
+    margin-top:1px;
+    padding:1px;  
+}
+
+/* glow a little around the border */
+.que.gapfill input.droptarget:hover {
+    -moz-box-shadow: 0 0 8px #7bc1f7;
+    -webkit-box-shadow: 0 0 8px #7bc1f7;
+    box-shadow: 0 0 8px #7bc1f7;
+
+}
+.que.gapfill input.droptarget:focus {
+    -moz-box-shadow: 0 0 8px #7bc1f7;
+    -webkit-box-shadow: 0 0 8px #7bc1f7;
+     box-shadow: 0 0 8px #7bc1f7;
+}
+
+.que.gapfill input.droptarget{
+    text-align:center;
+}
+
+.que.gapfill span.draggable.answers{
+    background:white;
+    border:solid 1px;
+    cursor: pointer;
+    display: inline-block;
+    margin:1px;
+    padding-left:4px;
+    padding-right:4px;
+    -moz-box-shadow: 3px 3px 4px #000;
+    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+    -webkit-box-shadow: 3px 3px 4px #000;
+     box-shadow: 3px 3px 4px #000;
+     vertical-align: middle;
+     z-index: 3;
+}
+
+.que.gapfill span.draggable.answers:hover{
+    -moz-box-shadow: 2px 2px 6px #000;
+    -webkit-box-shadow: 2px 2px 6px #000;
+    box-shadow: 2px 2px 6px #000;
+}
+
+/*Displays the correct answer in delimiters if an
+incorrec answer was entered */
+.que.gapfill span.aftergapfeedback {
+    color:green;
+    font-style: italic;
+    font-weight:bold;
+}
+
+/* styling the dropdowns*/
+.que.gapfill select{
+    border: solid black thin;
+    color:black;
+    padding-bottom:1px;
+    padding-top:1px;
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.gapfilltable td{
+    border:solid;
+    border-width:thin;
+}
+
+.gapfillfirstcol {
+    background-color:#BCBBBB;
+}
+
+.gapfillcol{
+    background-color: lightgray;
+}
+
+.gapfilltable th{
+    background-color: lightgray;
+    border:solid;
+    border-width:thin;
+}
+
+.gapfilltable caption{
+    border-bottom:solid;
+    border-width:thin;
+}
+
+.que.gapfill input.correctduplicate{
+    background-color: #FFFF00;
+}
+
+.que.gapfill input.correct{
+    background-color: #afa;
+}
+
+.que.gapfill input.incorrect{
+    background-color: #faa;
+}

@@ -15,11 +15,11 @@ $CFG->dboptions = array (
   'dbpersist' => 0,
   'dbport' => '',
   'dbsocket' => '',
-  'dbcollation' => 'utf8_unicode_ci',
+  // 'dbcollation' => 'utf8_unicode_ci',
 );
 
 $CFG->wwwroot   = 'http://localhost/stem';
-$CFG->dataroot  = 'C:\\\\moodledata\\stem';
+$CFG->dataroot  = '/Applications/MAMP/moodledata/stem';
 $CFG->admin     = 'admin';
 
 $CFG->directorypermissions = 0777;

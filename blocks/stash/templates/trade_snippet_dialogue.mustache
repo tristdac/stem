@@ -1,0 +1,85 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    Drop snippet dialogue.
+}}
+<div class="block-stash-trade-snippet-dialogue">
+    <div id="{{uuid}}" style="display: inline;">
+        <div class="block-stash-trade" title="{{trade.name}}" data-id="{{trade.id}}">
+            <div class="trade-label text-center p-y-1 p-x-1">{{trade.name}}</div>
+                <div class="container-fluid p-y-1">
+                    <div class="row-fluid">
+                        <div class="span6 col-sm-6">
+                            <div class="block-stash-column-title"><strong>{{trade.gaintitle}}</strong></div>
+                            {{#tradeitems}}
+                                {{#gainloss}}
+                                <div class="block-stash-trade-item">
+                                {{>block_stash/item_xsmall}} {{name}} ({{quantity}})
+                                <a title="" href="{{editurl}}">{{#pix}}t/edit, core, {{#str}}edittradeitem, block_stash, {{name}}{{/str}}{{/pix}}</a>
+                                <a title="" href="{{deleteurl}}">{{#pix}}t/delete, core, {{#str}}deleteitem, block_stash, {{name}}{{/str}}{{/pix}}</a>
+                                </div>
+                                {{/gainloss}}
+                            {{/tradeitems}}
+                        </div>
+                        <div class="span6 col-sm-6">
+                            <div class="block-stash-column-title"><strong>{{trade.losstitle}}</strong></div>
+                            {{#tradeitems}}
+                                {{^gainloss}}
+                                <div class="block-stash-trade-item">
+                                {{>block_stash/item_xsmall}} {{name}} ({{quantity}})
+                                <a title="" href="{{editurl}}">{{#pix}}t/edit, core, {{#str}}edittradeitem, block_stash, {{name}}{{/str}}{{/pix}}</a>
+                                <a title="" href="{{deleteurl}}">{{#pix}}t/delete, core, {{#str}}deleteitem, block_stash, {{name}}{{/str}}{{/pix}}</a>
+                                </div>
+                                {{/gainloss}}
+                            {{/tradeitems}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div>
+        <p><strong>{{#str}}snippet, block_stash{{/str}}</strong></p>
+        <div class="row-fluid">
+            <div class="span12 col-sm-12">
+                <textarea id="supertmep" name="snippet" onclick="this.select();" readonly></textarea>
+                <button class="block-stash-copy btn btn-secondary" data-action="copy" title="{{#str}}copytoclipboard, block_stash{{/str}}">{{#pix}}t/copy, core{{/pix}}</button>
+            </div>
+        </div>
+        <p><small>{{#str}}copypaste, block_stash{{/str}}</small></p>
+    </div>
+</div>
+
+{{#js}}
+require([
+    'jquery',
+    'block_stash/trade',
+    'block_stash/trade-snippet-maker'
+], function($, Trade, TradeSnippetMaker) {
+    var trade = new Trade({{{tradejson}}});
+    var tsm = new TradeSnippetMaker(trade);
+    var snippetbox = $('#supertmep');
+    snippetbox.html(tsm.getSnippet());
+
+    $('button[data-action="copy"]').click(function(){
+        $('#supertmep').select();
+        document.execCommand("copy");
+    });
+
+});
+{{/js}}

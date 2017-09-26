@@ -1,0 +1,218 @@
+/** Stash item. */
+.block-stash-item {
+    display: inline-block;
+}
+
+.block-stash-item[aria-haspopup="true"] {
+    cursor: pointer;
+}
+
+.block-stash-item .item-image {
+    background-position: center center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.block-stash-item .item-image .item-label,
+.block-stash-item .item-image .item-quantity {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 11px;
+    text-align: right;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.block-stash-item .item-image .item-quantity {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    line-height: 20px;
+}
+
+/** Actions (used in drops). */
+.block-stash-item .item-action {
+    margin: 5px 0 0;
+    text-align: center;
+}
+
+.block-stash-item .item-action button {
+    margin: 0;
+}
+
+/** Small item. */
+.block-stash-item.item-small .item-image {
+    width: 50px;
+    height: 50px;
+}
+
+.block-stash-item.item-small .item-image .item-label,
+.block-stash-item.item-xsmall .item-image .item-label {
+    display: none;
+}
+
+.block-stash-item.item-small:hover .item-label,
+.block-stash-item.item-xsmall:hover .item-label {
+    display: block;
+    bottom: -22px;
+    background-color: black;
+    width: 90px;
+    max-width: none;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0 5px;
+    right: auto;
+    left: 0;
+    left: -webkit-calc(50% - 90px / 2);
+    left:    -moz-calc(50% - 90px / 2);
+    left:         calc(50% - 90px / 2);
+    z-index: 1;
+}
+
+/** Extra small item. */
+.block-stash-item.item-xsmall .item-image {
+    width: 25px;
+    height: 25px;
+}
+
+.block-stash-item.item-xsmall:hover .item-label {
+    top: 2px;
+    left: 28px;
+    width: auto;
+    bottom: auto;
+    height: 20px;
+    line-height: 20px;
+}
+
+.block-stash-item.item-medium .item-image {
+    width: 100px;
+    height: 100px;
+}
+
+/** Quantity rules. */
+.block-stash-item.item-quantity-1 .item-quantity {
+    display: none;
+}
+
+/** Stash pages. */
+.path-blocks-stash .tablewithitems .block-stash-item {
+    float: left;
+    margin-right: 5px;
+}
+.path-blocks-stash .tablewithitems td {
+    line-height: 25px;
+}
+.path-blocks-stash .heading-button {
+    float: right;
+}
+.path-blocks-stash .singlebutton div,
+.path-blocks-stash .singlebutton input {
+    margin: 0;
+}
+.path-blocks-stash .block-stash-item-drops {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.path-blocks-stash .block-stash-drop-snippet-dialogue .block-stash-drop-summary hr {
+    margin: 0
+}
+.path-blocks-stash .block-stash-drop-snippet-dialogue .block-stash-drop-summary h6,
+.path-blocks-stash .block-stash-drop-snippet-dialogue .block-stash-drop-summary p {
+    margin-bottom: 0
+}
+.path-blocks-stash .reporttable .c0 {
+    width: 35px;
+}
+.path-blocks-stash .reporttable .stash-items .block-stash-item {
+    margin-bottom: 5px;
+}
+
+/** Snippet UI. */
+.block-stash-snippet-ui [name=snippet] {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 45px;
+    cursor: initial;
+    background-color: #fff;
+}
+
+/** Item details. */
+.block-stash-item-detail .item-preview {
+    float: left;
+}
+.block-stash-item-detail .item-description {
+    margin-left: 110px;
+}
+.dir-rtl .block-stash-item-detail .item-preview {
+    float: right;
+}
+.dir-rtl .block-stash-item-detail .item-description {
+    margin-right: 110px;
+    margin-left: 0;
+}
+
+/** Trade widget box */
+.block-stash-trade {
+    border: 1px solid #bbb;
+    max-width: 400px;
+}
+
+.trade-label {
+    border-bottom: 1px solid #bbb;
+    background: #f2f2f2
+}
+
+.dimmed {
+    color: #999;
+}
+
+/** Trade form */
+#block_stash_full_trade_form {
+    border: 1px solid;
+    border-color: #eeeeee;
+    /*max-width: 600px;*/
+    padding: 5px;
+}
+
+.block_stash_item_box {
+    border-bottom: 1px solid;
+    border-color: #eeeeee;
+}
+
+.block-stash-will-do-for-now {
+    border: 1px solid;
+    border-color: #eeeeee;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.block-stash-quantity {
+    width: 75px !important;
+    margin-bottom: 0px !important;
+}
+
+.block-stash-copy {
+    position: fixed;
+}
+
+.block-stash-filler {
+    height: 30px;
+}
+
+.block-stash-title-text {
+    padding-right: 15px;
+}

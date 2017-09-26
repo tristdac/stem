@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 34579  -->
+  <question type="easyoselectjs">
+    <name>
+      <text>fastest alcohol</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which alcohol below would react fastest with HBr to produce an alkylbromide?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <answers><![CDATA[Array]]></answers>
+    <structure><![CDATA[<cml><MDocument><MChemicalStruct><molecule molID="m1"><atomArray><atom id="a1" elementType="C" x2="-0.33000001311302185" y2="3.0250338954231957"/><atom id="a2" elementType="C" x2="-1.6636693541612801" y2="2.255016954864155"/><atom id="a3" elementType="C" x2="-1.6636693541612801" y2="0.7149830737460742"/><atom id="a4" elementType="C" x2="-0.33000001311302185" y2="-0.0550338668129664"/><atom id="a5" elementType="C" x2="1.0036693279352364" y2="0.7149830737460742"/><atom id="a6" elementType="C" x2="1.0036693279352364" y2="2.255016954864155"/><atom id="a7" elementType="O" x2="-0.33000001311302174" y2="4.565033895423196"/><atom id="a8" elementType="C" x2="-7.480000019073486" y2="2.9599922309357"/><atom id="a9" elementType="C" x2="-8.725866348090513" y2="2.054775632423699"/><atom id="a10" elementType="C" x2="-8.250003930703294" y2="0.5902281925038059"/><atom id="a11" elementType="C" x2="-6.709996107443679" y2="0.5902281925038059"/><atom id="a12" elementType="C" x2="-6.234133690056458" y2="2.054775632423699"/><atom id="a13" elementType="C" x2="-8.56894446210077" y2="4.0489366739629835"/><atom id="a14" elementType="O" x2="-6.391055576046203" y2="4.0489366739629835"/><atom id="a15" elementType="C" x2="6.380000114440918" y2="3.1350339097283104"/><atom id="a16" elementType="C" x2="5.0463307733926595" y2="2.36501696916927"/><atom id="a17" elementType="C" x2="5.0463307733926595" y2="0.8249830880511889"/><atom id="a18" elementType="C" x2="6.380000114440918" y2="0.05496614749214834"/><atom id="a19" elementType="C" x2="7.7136694554891765" y2="0.8249830880511889"/><atom id="a20" elementType="C" x2="7.7136694554891765" y2="2.36501696916927"/><atom id="a21" elementType="C" x2="6.380000114440918" y2="4.6750339097283105"/><atom id="a22" elementType="O" x2="7.713679236268954" y2="5.44503390972831"/></atomArray><bondArray><bond atomRefs2="a1 a2" order="1"/><bond atomRefs2="a1 a6" order="1"/><bond atomRefs2="a2 a3" order="1"/><bond atomRefs2="a3 a4" order="1"/><bond atomRefs2="a4 a5" order="1"/><bond atomRefs2="a5 a6" order="1"/><bond atomRefs2="a1 a7" order="1"/><bond atomRefs2="a8 a9" order="1"/><bond atomRefs2="a8 a12" order="1"/><bond atomRefs2="a9 a10" order="1"/><bond atomRefs2="a10 a11" order="1"/><bond atomRefs2="a11 a12" order="1"/><bond atomRefs2="a8 a13" order="1"/><bond atomRefs2="a8 a14" order="1"/><bond atomRefs2="a15 a16" order="1"/><bond atomRefs2="a15 a20" order="1"/><bond atomRefs2="a16 a17" order="1"/><bond atomRefs2="a17 a18" order="1"/><bond atomRefs2="a18 a19" order="1"/><bond atomRefs2="a19 a20" order="1"/><bond atomRefs2="a15 a21" order="1"/><bond atomRefs2="a21 a22" order="1"/></bondArray></molecule></MChemicalStruct></MDocument></cml>]]></structure>
+    <answer fraction="100" format="moodle_auto_format">
+      <text><![CDATA[{"bonds":"8-9,8-12,9-10,10-11,11-12,8-13,8-14","atoms":"8,9,10,11,12,13,14"}]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Correct</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text><![CDATA[{"bonds":"1-2,1-6,2-3,3-4,4-5,5-6,1-7","atoms":"1,2,3,4,5,6,7"}]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>I'm sorry this is a secondary (2<sup>o</sup>)  alcohol and the order of reactivity of alcohols with H-X is 3<sup>o</sup>&gt;2<sup>o</sup>&gt;1<sup>o</sup>.</p>
+<p>Are there any tertiary (3<sup>o</sup>) alcohols?</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text><![CDATA[{"bonds":"15-16,15-20,16-17,17-18,18-19,19-20,15-21,21-22","atoms":"15,16,17,18,19,20,21,22"}]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>I'm sorry this is a primary (1<sup>o</sup>)  alcohol and the order of reactivity of alcohols with H-X is 3<sup>o</sup>&gt;2<sup>o</sup>&gt;1<sup>o</sup>.</p>
+<p>Are there any tertiary (3<sup>o</sup>) alcohols?</p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 34580  -->
+  <question type="easyoselectjs">
+    <name>
+      <text>identify most stable carbocations</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which carbocation below is the most stable?  <em><strong>Note: You can select multiple atoms by holding down the "Shift" key.</strong></em></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <answers><![CDATA[Array]]></answers>
+    <structure><![CDATA[<cml><MDocument><MChemicalStruct><molecule molID="m1"><atomArray><atom id="a1" elementType="C" x2="-5.609999597072601" y2="1.925000250339508" formalCharge="1"/><atom id="a2" elementType="H" x2="-4.276320475244567" y2="2.6950002503395076"/><atom id="a3" elementType="C" x2="-6.943678718900637" y2="2.6950002503395076"/><atom id="a4" elementType="C" x2="-5.609999597072601" y2="0.385000250339508"/><atom id="a5" elementType="C" x2="0.9350006580352783" y2="2.6950341505310753"/><atom id="a6" elementType="C" x2="-0.3986686830129802" y2="1.9250172099720348"/><atom id="a7" elementType="C" x2="-0.3986686830129802" y2="0.3849833288539538"/><atom id="a8" elementType="C" x2="0.9350006580352783" y2="-0.38503361170508676"/><atom id="a9" elementType="C" x2="2.268669999083537" y2="0.3849833288539538"/><atom id="a10" elementType="C" x2="2.268669999083537" y2="1.9250172099720348" formalCharge="1"/><atom id="a11" elementType="C" x2="0.9350006580352783" y2="4.235034150531075"/><atom id="a12" elementType="H" x2="3.6023491209115726" y2="2.695017209972035"/><atom id="a13" elementType="C" x2="-13.148418138242837" y2="2.5575275570186706" formalCharge="1"/><atom id="a14" elementType="C" x2="-14.482087479291096" y2="1.78751061645963"/><atom id="a15" elementType="C" x2="-14.482087479291096" y2="0.2474767353415488"/><atom id="a16" elementType="C" x2="-13.148418138242837" y2="-0.5225402052174917"/><atom id="a17" elementType="C" x2="-11.814748797194579" y2="0.2474767353415488"/><atom id="a18" elementType="C" x2="-11.814748797194579" y2="1.78751061645963"/><atom id="a19" elementType="C" x2="-13.148418138242837" y2="4.097527557018671"/><atom id="a20" elementType="H" x2="-10.481069675366543" y2="2.5575106164596297"/></atomArray><bondArray><bond atomRefs2="a1 a2" order="1"/><bond atomRefs2="a1 a3" order="1"/><bond atomRefs2="a1 a4" order="1"/><bond atomRefs2="a5 a6" order="1"/><bond atomRefs2="a6 a7" order="1"/><bond atomRefs2="a7 a8" order="1"/><bond atomRefs2="a8 a9" order="1"/><bond atomRefs2="a9 a10" order="1"/><bond atomRefs2="a5 a10" order="1"/><bond atomRefs2="a5 a11" order="1"/><bond atomRefs2="a10 a12" order="1"/><bond atomRefs2="a13 a14" order="1"/><bond atomRefs2="a14 a15" order="1"/><bond atomRefs2="a15 a16" order="1"/><bond atomRefs2="a16 a17" order="1"/><bond atomRefs2="a17 a18" order="1"/><bond atomRefs2="a13 a18" order="1"/><bond atomRefs2="a13 a19" order="1"/><bond atomRefs2="a18 a20" order="1"/></bondArray></molecule></MChemicalStruct></MDocument></cml>]]></structure>
+    <answer fraction="100" format="moodle_auto_format">
+      <text><![CDATA[{"bonds":"13-14,14-15,15-16,16-17,17-18,13-18,13-19,18-20","atoms":"13,14,15,16,17,18,19,20"}]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p><br /><sup></sup></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text><![CDATA[{"bonds":"1-2,1-3,1-4","atoms":"1,2,3,4"}]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Sorry these carbocations are secondary.  The other cation is tertiary and is therefore more stable.</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text><![CDATA[{"bonds":"5-6,6-7,7-8,8-9,9-10,5-10,5-11,10-12","atoms":"5,6,7,8,9,10,11,12"}]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 34581  -->
+  <question type="easyoselectjs">
+    <name>
+      <text>identify sp2 carbons</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Identify all sp<sup>2</sup> hybrid atoms in the following structure by selecting them.  Note: You can select multiple atoms by holding down the "Shift" key.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <answers><![CDATA[Array]]></answers>
+    <structure><![CDATA[<cml><MDocument><MChemicalStruct><molecule molID="m1"><atomArray><atom id="a1" elementType="C" x2="-3.9600000381469727" y2="1.7600338799259883"/><atom id="a2" elementType="C" x2="-5.293669379195231" y2="0.9900169393669477"/><atom id="a3" elementType="C" x2="-5.293669379195231" y2="-0.5500169417511335"/><atom id="a4" elementType="C" x2="-3.9600000381469727" y2="-1.320033882310174"/><atom id="a5" elementType="C" x2="-2.626330697098714" y2="-0.5500169417511335"/><atom id="a6" elementType="C" x2="-2.626330697098714" y2="0.9900169393669477"/><atom id="a7" elementType="O" x2="-6.627353391332462" y2="1.760008469040839"/></atomArray><bondArray><bond atomRefs2="a1 a2" order="1"/><bond atomRefs2="a1 a6" order="2"/><bond atomRefs2="a2 a3" order="1"/><bond atomRefs2="a3 a4" order="1"/><bond atomRefs2="a4 a5" order="1"/><bond atomRefs2="a5 a6" order="1"/><bond atomRefs2="a2 a7" order="2"/></bondArray></molecule></MChemicalStruct></MDocument></cml>]]></structure>
+    <answer fraction="100" format="moodle_auto_format">
+      <text><![CDATA[{"bonds":"","atoms":"1,2,6,7"}]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text><![CDATA[{"bonds":"","atoms":"3,4,5"}]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Sorry those atoms are sp<sup>3</sup></p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 34582  -->
+  <question type="easyoselectjs">
+    <name>
+      <text>identify sp3 atoms</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Identify all sp<sup>3</sup> hybrid atoms in the following structure by selecting them.  <em><strong>Note: You can select multiple atoms by holding down the "Shift" key.</strong></em></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <answers><![CDATA[Array]]></answers>
+    <structure><![CDATA[<cml><MDocument><MChemicalStruct><molecule molID="m1"><atomArray><atom id="a1" elementType="C" x2="-3.9600000381469727" y2="1.7600338799259883"/><atom id="a2" elementType="C" x2="-5.293669379195231" y2="0.9900169393669477"/><atom id="a3" elementType="C" x2="-5.293669379195231" y2="-0.5500169417511335"/><atom id="a4" elementType="C" x2="-3.9600000381469727" y2="-1.320033882310174"/><atom id="a5" elementType="C" x2="-2.626330697098714" y2="-0.5500169417511335"/><atom id="a6" elementType="C" x2="-2.626330697098714" y2="0.9900169393669477"/><atom id="a7" elementType="O" x2="-6.627353391332462" y2="1.760008469040839"/></atomArray><bondArray><bond atomRefs2="a1 a2" order="1"/><bond atomRefs2="a1 a6" order="2"/><bond atomRefs2="a2 a3" order="1"/><bond atomRefs2="a3 a4" order="1"/><bond atomRefs2="a4 a5" order="1"/><bond atomRefs2="a5 a6" order="1"/><bond atomRefs2="a2 a7" order="2"/></bondArray></molecule></MChemicalStruct></MDocument></cml>]]></structure>
+    <answer fraction="0" format="moodle_auto_format">
+      <text><![CDATA[{"bonds":"","atoms":"1,2,6,7"}]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>Sorry those atoms are sp<sup>2</sup></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="moodle_auto_format">
+      <text><![CDATA[{"bonds":"","atoms":"3,4,5"}]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 34583  -->
+  <question type="easyoselectjs">
+    <name>
+      <text>select primary alcohols</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Select the primary alcohol(s) below.</p>
+<p><em><strong>Note: You can select multiple atoms by holding down the "Shift" key.</strong></em></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <answers><![CDATA[Array]]></answers>
+    <structure><![CDATA[<cml><MDocument><MChemicalStruct><molecule molID="m1"><atomArray><atom id="a1" elementType="C" x2="2.8600006103515625" y2="0.054999999701976776"/><atom id="a2" elementType="C" x2="4.193679732179596" y2="0.8249999997019762"/><atom id="a3" elementType="C" x2="5.527358854007632" y2="0.054999999701976554"/><atom id="a4" elementType="C" x2="6.861037975835668" y2="0.8249999997019768"/><atom id="a5" elementType="O" x2="4.193679732179596" y2="2.3649999997019764"/><atom id="a6" elementType="C" x2="-16.940000534057617" y2="1.1549999713897705"/><atom id="a7" elementType="C" x2="-15.400000534057618" y2="1.1549999713897705"/><atom id="a8" elementType="C" x2="-15.400000534057618" y2="2.6949999713897705"/><atom id="a9" elementType="C" x2="-15.400000534057618" y2="-0.3850000286102295"/><atom id="a10" elementType="O" x2="-13.860000534057619" y2="1.1549999713897705"/><atom id="a11" elementType="C" x2="-10.395000457763672" y2="1.0449999570846558"/><atom id="a12" elementType="C" x2="-8.855000457763673" y2="1.0449999570846558"/><atom id="a13" elementType="O" x2="-8.085000457763673" y2="-0.28867916474337973"/><atom id="a14" elementType="C" x2="-3.299999952316284" y2="1.870033894231103"/><atom id="a15" elementType="C" x2="-4.633669293364543" y2="1.1000169536720623"/><atom id="a16" elementType="C" x2="-4.633669293364543" y2="-0.4400169274460188"/><atom id="a17" elementType="C" x2="-3.299999952316284" y2="-1.2100338680050593"/><atom id="a18" elementType="C" x2="-1.9663306112680259" y2="-0.4400169274460188"/><atom id="a19" elementType="C" x2="-1.9663306112680259" y2="1.1000169536720623"/><atom id="a20" elementType="C" x2="-4.388944395343567" y2="2.958978337258386"/><atom id="a21" elementType="O" x2="-2.211055509289001" y2="2.958978337258386"/></atomArray><bondArray><bond atomRefs2="a1 a2" order="1"/><bond atomRefs2="a2 a3" order="1"/><bond atomRefs2="a3 a4" order="1"/><bond atomRefs2="a2 a5" order="1"/><bond atomRefs2="a6 a7" order="1"/><bond atomRefs2="a7 a8" order="1"/><bond atomRefs2="a7 a9" order="1"/><bond atomRefs2="a7 a10" order="1"/><bond atomRefs2="a11 a12" order="1"/><bond atomRefs2="a12 a13" order="1"/><bond atomRefs2="a14 a15" order="1"/><bond atomRefs2="a15 a16" order="1"/><bond atomRefs2="a16 a17" order="1"/><bond atomRefs2="a17 a18" order="1"/><bond atomRefs2="a18 a19" order="1"/><bond atomRefs2="a14 a19" order="1"/><bond atomRefs2="a14 a20" order="1"/><bond atomRefs2="a14 a21" order="1"/></bondArray></molecule></MChemicalStruct></MDocument></cml>]]></structure>
+    <answer fraction="100" format="moodle_auto_format">
+      <text><![CDATA[{"bonds":"11-12,12-13","atoms":"11,12,13"}]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 34584  -->
+  <question type="easyoselectjs">
+    <name>
+      <text>select secondary alcohols</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Select the secondary alcohol below.</p>
+<p><em><strong>Note: You can select multiple atoms by holding down the "Shift" key.</strong></em></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <answers><![CDATA[Array]]></answers>
+    <structure><![CDATA[<cml><MDocument><MChemicalStruct><molecule molID="m1"><atomArray><atom id="a1" elementType="C" x2="2.8600006103515625" y2="0.054999999701976776"/><atom id="a2" elementType="C" x2="4.193679732179596" y2="0.8249999997019762"/><atom id="a3" elementType="C" x2="5.527358854007632" y2="0.054999999701976554"/><atom id="a4" elementType="C" x2="6.861037975835668" y2="0.8249999997019768"/><atom id="a5" elementType="O" x2="4.193679732179596" y2="2.3649999997019764"/><atom id="a6" elementType="C" x2="-16.940000534057617" y2="1.1549999713897705"/><atom id="a7" elementType="C" x2="-15.400000534057618" y2="1.1549999713897705"/><atom id="a8" elementType="C" x2="-15.400000534057618" y2="2.6949999713897705"/><atom id="a9" elementType="C" x2="-15.400000534057618" y2="-0.3850000286102295"/><atom id="a10" elementType="O" x2="-13.860000534057619" y2="1.1549999713897705"/><atom id="a11" elementType="C" x2="-10.395000457763672" y2="1.0449999570846558"/><atom id="a12" elementType="C" x2="-8.855000457763673" y2="1.0449999570846558"/><atom id="a13" elementType="O" x2="-8.085000457763673" y2="-0.28867916474337973"/><atom id="a14" elementType="C" x2="-3.299999952316284" y2="1.870033894231103"/><atom id="a15" elementType="C" x2="-4.633669293364543" y2="1.1000169536720623"/><atom id="a16" elementType="C" x2="-4.633669293364543" y2="-0.4400169274460188"/><atom id="a17" elementType="C" x2="-3.299999952316284" y2="-1.2100338680050593"/><atom id="a18" elementType="C" x2="-1.9663306112680259" y2="-0.4400169274460188"/><atom id="a19" elementType="C" x2="-1.9663306112680259" y2="1.1000169536720623"/><atom id="a20" elementType="C" x2="-4.388944395343567" y2="2.958978337258386"/><atom id="a21" elementType="O" x2="-2.211055509289001" y2="2.958978337258386"/></atomArray><bondArray><bond atomRefs2="a1 a2" order="1"/><bond atomRefs2="a2 a3" order="1"/><bond atomRefs2="a3 a4" order="1"/><bond atomRefs2="a2 a5" order="1"/><bond atomRefs2="a6 a7" order="1"/><bond atomRefs2="a7 a8" order="1"/><bond atomRefs2="a7 a9" order="1"/><bond atomRefs2="a7 a10" order="1"/><bond atomRefs2="a11 a12" order="1"/><bond atomRefs2="a12 a13" order="1"/><bond atomRefs2="a14 a15" order="1"/><bond atomRefs2="a15 a16" order="1"/><bond atomRefs2="a16 a17" order="1"/><bond atomRefs2="a17 a18" order="1"/><bond atomRefs2="a18 a19" order="1"/><bond atomRefs2="a14 a19" order="1"/><bond atomRefs2="a14 a20" order="1"/><bond atomRefs2="a14 a21" order="1"/></bondArray></molecule></MChemicalStruct></MDocument></cml>]]></structure>
+    <answer fraction="100" format="moodle_auto_format">
+      <text><![CDATA[{"bonds":"1-2,2-3,3-4,2-5","atoms":"1,2,3,4,5"}]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 34585  -->
+  <question type="easyoselectjs">
+    <name>
+      <text>select tertiary alcohols</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Select the tertiary alcohol below.</p>
+<p><em><strong>Note: You can select multiple atoms by holding down the "Shift" key.</strong></em></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <answers><![CDATA[Array]]></answers>
+    <structure><![CDATA[<cml><MDocument><MChemicalStruct><molecule molID="m1"><atomArray><atom id="a1" elementType="C" x2="2.8600006103515625" y2="0.054999999701976776"/><atom id="a2" elementType="C" x2="4.193679732179596" y2="0.8249999997019762"/><atom id="a3" elementType="C" x2="5.527358854007632" y2="0.054999999701976554"/><atom id="a4" elementType="C" x2="6.861037975835668" y2="0.8249999997019768"/><atom id="a5" elementType="O" x2="4.193679732179596" y2="2.3649999997019764"/><atom id="a6" elementType="C" x2="-16.940000534057617" y2="1.1549999713897705"/><atom id="a7" elementType="C" x2="-15.400000534057618" y2="1.1549999713897705"/><atom id="a8" elementType="C" x2="-15.400000534057618" y2="2.6949999713897705"/><atom id="a9" elementType="C" x2="-15.400000534057618" y2="-0.3850000286102295"/><atom id="a10" elementType="O" x2="-13.860000534057619" y2="1.1549999713897705"/><atom id="a11" elementType="C" x2="-10.395000457763672" y2="1.0449999570846558"/><atom id="a12" elementType="C" x2="-8.855000457763673" y2="1.0449999570846558"/><atom id="a13" elementType="O" x2="-8.085000457763673" y2="-0.28867916474337973"/><atom id="a14" elementType="C" x2="-3.299999952316284" y2="1.870033894231103"/><atom id="a15" elementType="C" x2="-4.633669293364543" y2="1.1000169536720623"/><atom id="a16" elementType="C" x2="-4.633669293364543" y2="-0.4400169274460188"/><atom id="a17" elementType="C" x2="-3.299999952316284" y2="-1.2100338680050593"/><atom id="a18" elementType="C" x2="-1.9663306112680259" y2="-0.4400169274460188"/><atom id="a19" elementType="C" x2="-1.9663306112680259" y2="1.1000169536720623"/><atom id="a20" elementType="C" x2="-4.388944395343567" y2="2.958978337258386"/><atom id="a21" elementType="O" x2="-2.211055509289001" y2="2.958978337258386"/></atomArray><bondArray><bond atomRefs2="a1 a2" order="1"/><bond atomRefs2="a2 a3" order="1"/><bond atomRefs2="a3 a4" order="1"/><bond atomRefs2="a2 a5" order="1"/><bond atomRefs2="a6 a7" order="1"/><bond atomRefs2="a7 a8" order="1"/><bond atomRefs2="a7 a9" order="1"/><bond atomRefs2="a7 a10" order="1"/><bond atomRefs2="a11 a12" order="1"/><bond atomRefs2="a12 a13" order="1"/><bond atomRefs2="a14 a15" order="1"/><bond atomRefs2="a15 a16" order="1"/><bond atomRefs2="a16 a17" order="1"/><bond atomRefs2="a17 a18" order="1"/><bond atomRefs2="a18 a19" order="1"/><bond atomRefs2="a14 a19" order="1"/><bond atomRefs2="a14 a20" order="1"/><bond atomRefs2="a14 a21" order="1"/></bondArray></molecule></MChemicalStruct></MDocument></cml>]]></structure>
+    <answer fraction="100" format="moodle_auto_format">
+      <text><![CDATA[{"bonds":"6-7,7-8,7-9,7-10,14-15,15-16,16-17,17-18,18-19,14-19,14-20,14-21","atoms":"6,7,8,9,10,14,15,16,17,18,19,20,21"}]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 34586  -->
+  <question type="easyoselectjs">
+    <name>
+      <text>Select the electrophile - sn1/sn2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Select the electrophile in the following <span class="nolink">substitution reaction</span>.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <answers><![CDATA[Array]]></answers>
+    <structure><![CDATA[<cml><MDocument><MChemicalStruct><molecule molID="m1"><atomArray><atom id="a1" elementType="C" x2="-13.147525619897275" y2="5.486452499208111"/><atom id="a2" elementType="N" x2="-11.550000190734863" y2="4.565033895423196"/><atom id="a3" elementType="C" x2="-10.216330849686605" y2="2.255016954864155"/><atom id="a4" elementType="C" x2="-10.216330849686605" y2="0.7149830737460742"/><atom id="a5" elementType="C" x2="-11.550000190734863" y2="-0.0550338668129664"/><atom id="a6" elementType="C" x2="-12.883669531783122" y2="0.7149830737460742"/><atom id="a7" elementType="C" x2="-12.883669531783122" y2="2.255016954864155"/><atom id="a8" elementType="C" x2="-11.550000190734863" y2="3.0250338954231957"/><atom id="a9" elementType="Br" x2="-0.4539627370358821" y2="3.5199999999999996"/><atom id="a10" elementType="C" x2="-1.787641858863918" y2="2.75"/><atom id="a11" elementType="C" x2="-3.1213209806919533" y2="3.52"/><atom id="a12" elementType="C" x2="-4.455000102519989" y2="2.75"/><atom id="a13" elementType="Br" x2="9.515000343322754" y2="5.554999828338623" formalCharge="-1"/><atom id="a14" elementType="C" x2="13.385728463746108" y2="4.999848171196134"/><atom id="a15" elementType="C" x2="12.052049341918073" y2="4.229848171196134"/><atom id="a16" elementType="C" x2="10.718370220090037" y2="4.999848171196135"/><atom id="a17" elementType="C" x2="9.384691098262001" y2="2.6898481711961346"/><atom id="a18" elementType="C" x2="8.051021757213743" y2="1.9198312306370942"/><atom id="a19" elementType="C" x2="8.051021757213743" y2="0.3797973495190132"/><atom id="a20" elementType="C" x2="9.384691098262001" y2="-0.3902195910400277"/><atom id="a21" elementType="C" x2="10.71836043931026" y2="0.3797973495190132"/><atom id="a22" elementType="C" x2="10.71836043931026" y2="1.9198312306370942"/><atom id="a23" elementType="N" x2="9.384691098262001" y2="4.229848171196135" formalCharge="1"/><atom id="a24" elementType="C" x2="7.78716566909959" y2="5.15126677498105"/></atomArray><bondArray><bond atomRefs2="a2 a1" order="1"/><bond atomRefs2="a4 a3" order="1"/><bond atomRefs2="a5 a4" order="2"/><bond atomRefs2="a6 a5" order="1"/><bond atomRefs2="a7 a6" order="2"/><bond atomRefs2="a8 a2" order="1"/><bond atomRefs2="a8 a3" order="2"/><bond atomRefs2="a8 a7" order="1"/><bond atomRefs2="a10 a9" order="1"/><bond atomRefs2="a11 a10" order="1"/><bond atomRefs2="a12 a11" order="1"/><bond atomRefs2="a15 a14" order="1"/><bond atomRefs2="a16 a15" order="1"/><bond atomRefs2="a23 a16" order="1"/><bond atomRefs2="a17 a18" order="1"/><bond atomRefs2="a18 a19" order="2"/><bond atomRefs2="a19 a20" order="1"/><bond atomRefs2="a20 a21" order="2"/><bond atomRefs2="a17 a22" order="2"/><bond atomRefs2="a21 a22" order="1"/><bond atomRefs2="a17 a23" order="1"/><bond atomRefs2="a23 a24" order="1"/></bondArray></molecule></MChemicalStruct><MPolyline headLength="0.6" headWidth="0.4" id="o1"><MPoint x="1.8700000047683716" y="3.244999885559082"/><MPoint x="4.730000019073486" y="3.244999885559082"/></MPolyline><MTextBox toption="NOROT" fontScale="14.0" halign="CENTER" valign="CENTER" autoSize="false" id="o2"><Field name="text">+</Field><MPoint x="-8.598332894643148" y="2.291666733423869"/><MPoint x="-7.571666227976482" y="2.291666733423869"/><MPoint x="-7.571666227976482" y="3.318333400090536"/><MPoint x="-8.598332894643148" y="3.318333400090536"/></MTextBox></MDocument></cml>]]></structure>
+    <answer fraction="100" format="moodle_auto_format">
+      <text><![CDATA[{"bonds":"10-9,11-10,12-11","atoms":"9,10,11,12"}]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 34587  -->
+  <question type="easyoselectjs">
+    <name>
+      <text>Select the leaving group - sn1/sn2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Select the leaving group in the following substitution reaction.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <answers><![CDATA[Array]]></answers>
+    <structure><![CDATA[<cml><MDocument><MChemicalStruct><molecule molID="m1"><atomArray><atom id="a1" elementType="C" x2="-13.147525619897275" y2="5.486452499208111"/><atom id="a2" elementType="N" x2="-11.550000190734863" y2="4.565033895423196"/><atom id="a3" elementType="C" x2="-10.216330849686605" y2="2.255016954864155"/><atom id="a4" elementType="C" x2="-10.216330849686605" y2="0.7149830737460742"/><atom id="a5" elementType="C" x2="-11.550000190734863" y2="-0.0550338668129664"/><atom id="a6" elementType="C" x2="-12.883669531783122" y2="0.7149830737460742"/><atom id="a7" elementType="C" x2="-12.883669531783122" y2="2.255016954864155"/><atom id="a8" elementType="C" x2="-11.550000190734863" y2="3.0250338954231957"/><atom id="a9" elementType="Br" x2="-0.4539627370358821" y2="3.5199999999999996"/><atom id="a10" elementType="C" x2="-1.787641858863918" y2="2.75"/><atom id="a11" elementType="C" x2="-3.1213209806919533" y2="3.52"/><atom id="a12" elementType="C" x2="-4.455000102519989" y2="2.75"/><atom id="a13" elementType="Br" x2="9.515000343322754" y2="5.554999828338623" formalCharge="-1"/><atom id="a14" elementType="C" x2="13.385728463746108" y2="4.999848171196134"/><atom id="a15" elementType="C" x2="12.052049341918073" y2="4.229848171196134"/><atom id="a16" elementType="C" x2="10.718370220090037" y2="4.999848171196135"/><atom id="a17" elementType="C" x2="9.384691098262001" y2="2.6898481711961346"/><atom id="a18" elementType="C" x2="8.051021757213743" y2="1.9198312306370942"/><atom id="a19" elementType="C" x2="8.051021757213743" y2="0.3797973495190132"/><atom id="a20" elementType="C" x2="9.384691098262001" y2="-0.3902195910400277"/><atom id="a21" elementType="C" x2="10.71836043931026" y2="0.3797973495190132"/><atom id="a22" elementType="C" x2="10.71836043931026" y2="1.9198312306370942"/><atom id="a23" elementType="N" x2="9.384691098262001" y2="4.229848171196135" formalCharge="1"/><atom id="a24" elementType="C" x2="7.78716566909959" y2="5.15126677498105"/></atomArray><bondArray><bond atomRefs2="a2 a1" order="1"/><bond atomRefs2="a4 a3" order="1"/><bond atomRefs2="a5 a4" order="2"/><bond atomRefs2="a6 a5" order="1"/><bond atomRefs2="a7 a6" order="2"/><bond atomRefs2="a8 a2" order="1"/><bond atomRefs2="a8 a3" order="2"/><bond atomRefs2="a8 a7" order="1"/><bond atomRefs2="a10 a9" order="1"/><bond atomRefs2="a11 a10" order="1"/><bond atomRefs2="a12 a11" order="1"/><bond atomRefs2="a15 a14" order="1"/><bond atomRefs2="a16 a15" order="1"/><bond atomRefs2="a23 a16" order="1"/><bond atomRefs2="a17 a18" order="1"/><bond atomRefs2="a18 a19" order="2"/><bond atomRefs2="a19 a20" order="1"/><bond atomRefs2="a20 a21" order="2"/><bond atomRefs2="a17 a22" order="2"/><bond atomRefs2="a21 a22" order="1"/><bond atomRefs2="a17 a23" order="1"/><bond atomRefs2="a23 a24" order="1"/></bondArray></molecule></MChemicalStruct><MPolyline headLength="0.6" headWidth="0.4" id="o1"><MPoint x="1.8700000047683716" y="3.244999885559082"/><MPoint x="4.730000019073486" y="3.244999885559082"/></MPolyline><MTextBox toption="NOROT" fontScale="14.0" halign="CENTER" valign="CENTER" autoSize="false" id="o2"><Field name="text">+</Field><MPoint x="-8.598332894643148" y="2.291666733423869"/><MPoint x="-7.571666227976482" y="2.291666733423869"/><MPoint x="-7.571666227976482" y="3.318333400090536"/><MPoint x="-8.598332894643148" y="3.318333400090536"/></MTextBox></MDocument></cml>]]></structure>
+    <answer fraction="100" format="moodle_auto_format">
+      <text><![CDATA[{"bonds":"","atoms":"9"}]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 34588  -->
+  <question type="easyoselectjs">
+    <name>
+      <text>Select the nucleophile - sn1/sn2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Select the nucleophile in the following substitution reaction.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <answers><![CDATA[Array]]></answers>
+    <structure><![CDATA[<cml><MDocument><MChemicalStruct><molecule molID="m1"><atomArray><atom id="a1" elementType="C" x2="-13.147525619897275" y2="5.486452499208111"/><atom id="a2" elementType="N" x2="-11.550000190734863" y2="4.565033895423196"/><atom id="a3" elementType="C" x2="-10.216330849686605" y2="2.255016954864155"/><atom id="a4" elementType="C" x2="-10.216330849686605" y2="0.7149830737460742"/><atom id="a5" elementType="C" x2="-11.550000190734863" y2="-0.0550338668129664"/><atom id="a6" elementType="C" x2="-12.883669531783122" y2="0.7149830737460742"/><atom id="a7" elementType="C" x2="-12.883669531783122" y2="2.255016954864155"/><atom id="a8" elementType="C" x2="-11.550000190734863" y2="3.0250338954231957"/><atom id="a9" elementType="Br" x2="-0.4539627370358821" y2="3.5199999999999996"/><atom id="a10" elementType="C" x2="-1.787641858863918" y2="2.75"/><atom id="a11" elementType="C" x2="-3.1213209806919533" y2="3.52"/><atom id="a12" elementType="C" x2="-4.455000102519989" y2="2.75"/><atom id="a13" elementType="Br" x2="9.515000343322754" y2="5.554999828338623" formalCharge="-1"/><atom id="a14" elementType="C" x2="13.385728463746108" y2="4.999848171196134"/><atom id="a15" elementType="C" x2="12.052049341918073" y2="4.229848171196134"/><atom id="a16" elementType="C" x2="10.718370220090037" y2="4.999848171196135"/><atom id="a17" elementType="C" x2="9.384691098262001" y2="2.6898481711961346"/><atom id="a18" elementType="C" x2="8.051021757213743" y2="1.9198312306370942"/><atom id="a19" elementType="C" x2="8.051021757213743" y2="0.3797973495190132"/><atom id="a20" elementType="C" x2="9.384691098262001" y2="-0.3902195910400277"/><atom id="a21" elementType="C" x2="10.71836043931026" y2="0.3797973495190132"/><atom id="a22" elementType="C" x2="10.71836043931026" y2="1.9198312306370942"/><atom id="a23" elementType="N" x2="9.384691098262001" y2="4.229848171196135" formalCharge="1"/><atom id="a24" elementType="C" x2="7.78716566909959" y2="5.15126677498105"/></atomArray><bondArray><bond atomRefs2="a2 a1" order="1"/><bond atomRefs2="a4 a3" order="1"/><bond atomRefs2="a5 a4" order="2"/><bond atomRefs2="a6 a5" order="1"/><bond atomRefs2="a7 a6" order="2"/><bond atomRefs2="a8 a2" order="1"/><bond atomRefs2="a8 a3" order="2"/><bond atomRefs2="a8 a7" order="1"/><bond atomRefs2="a10 a9" order="1"/><bond atomRefs2="a11 a10" order="1"/><bond atomRefs2="a12 a11" order="1"/><bond atomRefs2="a15 a14" order="1"/><bond atomRefs2="a16 a15" order="1"/><bond atomRefs2="a23 a16" order="1"/><bond atomRefs2="a17 a18" order="1"/><bond atomRefs2="a18 a19" order="2"/><bond atomRefs2="a19 a20" order="1"/><bond atomRefs2="a20 a21" order="2"/><bond atomRefs2="a17 a22" order="2"/><bond atomRefs2="a21 a22" order="1"/><bond atomRefs2="a17 a23" order="1"/><bond atomRefs2="a23 a24" order="1"/></bondArray></molecule></MChemicalStruct><MPolyline headLength="0.6" headWidth="0.4" id="o1"><MPoint x="1.8700000047683716" y="3.244999885559082"/><MPoint x="4.730000019073486" y="3.244999885559082"/></MPolyline><MTextBox toption="NOROT" fontScale="14.0" halign="CENTER" valign="CENTER" autoSize="false" id="o2"><Field name="text">+</Field><MPoint x="-8.598332894643148" y="2.291666733423869"/><MPoint x="-7.571666227976482" y="2.291666733423869"/><MPoint x="-7.571666227976482" y="3.318333400090536"/><MPoint x="-8.598332894643148" y="3.318333400090536"/></MTextBox></MDocument></cml>]]></structure>
+    <answer fraction="100" format="moodle_auto_format">
+      <text><![CDATA[{"bonds":"2-1,4-3,5-4,6-5,7-6,8-2,8-3,8-7","atoms":"1,2,3,4,5,6,7,8"}]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>

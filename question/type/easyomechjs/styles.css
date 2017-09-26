@@ -1,0 +1,59 @@
+.que.easyomechjs .answer {
+    padding: 0.3em;
+    width: auto;
+    display: inline;
+}
+.que.easyomechjs .answer input {
+    width: 65%;
+}
+.que.easyomechjs.applet {
+	width:520px;
+}
+.que.easyomechjs.author {
+		float: right;
+		font-style: italic ;
+		font-size: 10px;
+}
+#page-question-type-easyomechjs .mform .textareamonospace {
+    white-space: pre;
+    font-family: Andale Mono, Monaco, Courier New, DejaVu Sans Mono, monospace;
+}
+
+
+.que.easyomechjs span.answerlabel {
+    vertical-align: top;
+}
+
+
+.que.easyomechjs .arrowbutton {
+  background: #1979FA;
+  color: white;
+display: inline;
+
+}
+
+.sketcher-frame {
+	margin: -2px;
+	resize: none;
+	min-width: 370px;
+	min-height: 370px;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.easyomechjs.resizable{
+	border: none;
+	padding: 0px 16px 16px 0px;
+	border: 0px;
+	resize: both;
+	width: auto;
+	height: 500px;
+	min-width: 370px;
+	min-height: 370px;
+	overflow: hidden;
+	background-color: transparent;
+}
+
+.que.easyomechjs .license .logo{
+    margin-top: 20px;
+}
