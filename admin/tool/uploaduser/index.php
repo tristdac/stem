@@ -591,7 +591,7 @@ if ($formdata = $mform2->is_cancelled()) {
                                 }
                             }
                             if (!validate_email($user->email)) {
-                                $upt->track('email', get_string('invalidemail'), 'warning');
+                                // $upt->track('email', get_string('invalidemail'), 'warning');
                             }
                         }
 
@@ -755,10 +755,10 @@ if ($formdata = $mform2->is_cancelled()) {
             $isinternalauth = $auth->is_internal();
 
             if (empty($user->email)) {
-                $upt->track('email', get_string('invalidemail'), 'error');
-                $upt->track('status', $strusernotaddederror, 'error');
-                $userserrors++;
-                continue;
+                // $upt->track('email', get_string('invalidemail'), 'error');
+                // $upt->track('status', $strusernotaddederror, 'error');
+                // $userserrors++;
+                // continue;
 
             } else if ($DB->record_exists('user', array('email'=>$user->email))) {
                 if ($noemailduplicates) {
@@ -771,7 +771,7 @@ if ($formdata = $mform2->is_cancelled()) {
                 }
             }
             if (!validate_email($user->email)) {
-                $upt->track('email', get_string('invalidemail'), 'warning');
+                // $upt->track('email', get_string('invalidemail'), 'warning');
             }
 
             if (empty($user->lang)) {
@@ -1199,7 +1199,7 @@ while ($linenum <= $previewrows and $fields = $cir->next()) {
 
     if (isset($rowcols['email'])) {
         if (!validate_email($rowcols['email'])) {
-            $rowcols['status'][] = get_string('invalidemail');
+            // $rowcols['status'][] = get_string('invalidemail');
         }
 
         $select = $DB->sql_like('email', ':email', false, true, false, '|');

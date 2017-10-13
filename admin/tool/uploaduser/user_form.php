@@ -402,7 +402,7 @@ class admin_uploaduser_form2 extends moodleform {
                 $errors['uutype'] = implode('<br />',  $missing);
             }
             if (!in_array('email', $columns) and empty($data['email'])) {
-                $errors['email'] = get_string('requiredtemplate', 'tool_uploaduser');
+                // $errors['email'] = get_string('requiredtemplate', 'tool_uploaduser');
             }
         }
         return $errors;

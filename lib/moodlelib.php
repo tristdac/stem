@@ -3241,6 +3241,7 @@ function user_not_fully_set_up($user, $strict = true) {
         return false;
     }
 
+    // if (empty($user->firstname) or empty($user->lastname) or empty($user->email) or over_bounce_threshold($user)) {
     if (empty($user->firstname) or empty($user->lastname) or empty($user->email) or over_bounce_threshold($user)) {
         return true;
     }
